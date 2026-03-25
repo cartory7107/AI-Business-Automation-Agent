@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Business Automation Agent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+    <div class="wave wave-one" aria-hidden="true"></div>
+    <div class="wave wave-two" aria-hidden="true"></div>
+
+    <aside class="sidebar glass">
+      <div class="brand">
+        <div class="brand-icon">AI</div>
+        <div>
+          <h1>AI Business<br />Automation Agent</h1>
+          <p>Automation Health Score: <span>82%</span></p>
+        </div>
+      </div>
+      <nav>
+        <a href="#dashboard" class="active">Dashboard</a>
+        <a href="#automations">Automations</a>
+        <a href="#integrations">Integrations</a>
+        <a href="#templates">Templates</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#support">Support</a>
+        <a href="#settings">Settings</a>
+      </nav>
+      <div class="fix-card">
+        <h4>Suggested Fix</h4>
+        <p>Add WhatsApp follow-up step for new leads.</p>
+        <button>Fix Workflow</button>
+      </div>
+    </aside>
+
+    <main>
+      <header class="topbar glass">
+        <input type="search" placeholder="Search workflows, tools, contacts..." />
+        <div class="topbar-right">
+          <button class="icon-btn" aria-label="Notifications">🔔</button>
+          <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+          <div class="profile">AJ</div>
+        </div>
+      </header>
+
+      <section id="dashboard" class="hero">
+        <div class="hero-copy">
+          <p class="chip">Trusted by Businesses Worldwide</p>
+          <h2>Automate Your Entire Business With AI Agent</h2>
+          <p class="subheadline">
+            Connect Email, CRM, Ads and Support into One Smart Automation System.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary">Start Free Trial</button>
+            <button class="btn btn-ghost">Watch Demo</button>
+          </div>
+          <p class="built-text">Built with ❤️ in Bangladesh · Proudly Built in Bangladesh 🇧🇩</p>
+        </div>
+        <div class="hero-card glass">
+          <h3>Smart Notification System</h3>
+          <ul>
+            <li>✅ New lead arrived from Facebook Ads.</li>
+            <li>📉 Ads performance dropped 12% this hour.</li>
+            <li>💬 Customer complaint detected in support queue.</li>
+            <li>📈 Sales increased by 17% since morning.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="glass"><h4>Leads Today</h4><p>186</p></article>
+        <article class="glass"><h4>Sales Today</h4><p>$8,420</p></article>
+        <article class="glass"><h4>Conversion Rate</h4><p>6.8%</p></article>
+        <article class="glass"><h4>Campaign Status</h4><p>Optimizing</p></article>
+      </section>
+
+      <section id="features" class="section">
+        <h3>Feature Grid</h3>
+        <div class="grid three">
+          <article class="glass card"><h4>Smart Integration System</h4><p>Gmail, Outlook, WhatsApp API, Facebook Ads, Google Ads, Shopify, WooCommerce, HubSpot CRM, Notion, Slack.</p></article>
+          <article class="glass card"><h4>AI Workflow Builder</h4><p>Visual drag & drop builder: New Lead → Send Email → Add to CRM → Send WhatsApp follow up.</p></article>
+          <article class="glass card"><h4>AI Decision Engine</h4><p>Analyzes data, adjusts ads budget, sends alerts, and suggests campaign improvements automatically.</p></article>
+          <article class="glass card"><h4>Email Automation</h4><p>Follow-up, welcome, sales, and reminder emails auto-sent at the best conversion times.</p></article>
+          <article class="glass card"><h4>AI Sales Assistant</h4><p>Detects customer intent, handles objections, auto-replies, and recommends smart discount strategy.</p></article>
+          <article class="glass card"><h4>Support Automation</h4><p>AI chatbot handles FAQs, routes refund requests, and checks order statuses instantly.</p></article>
+        </div>
+      </section>
+
+      <section id="automations" class="section">
+        <h3>Automation Workflow Preview</h3>
+        <div class="workflow glass">
+          <div class="node">New Lead Trigger</div><span>→</span>
+          <div class="node">Send Welcome Email</div><span>→</span>
+          <div class="node">Add to HubSpot CRM</div><span>→</span>
+          <div class="node pulse">Send WhatsApp Follow-up</div><span>→</span>
+          <div class="node">Notify Sales on Slack</div>
+        </div>
+      </section>
+
+      <section id="integrations" class="section">
+        <h3>Integration Logos Slider</h3>
+        <div class="logo-marquee glass">
+          <div class="track">
+            <span>Gmail</span><span>Outlook</span><span>WhatsApp API</span><span>Facebook Ads</span><span>Google Ads</span><span>Shopify</span><span>WooCommerce</span><span>HubSpot</span><span>Notion</span><span>Slack</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="templates" class="section">
+        <h3>Automation Templates Library</h3>
+        <div class="grid five">
+          <article class="glass card">Lead nurturing workflow</article>
+          <article class="glass card">Ecommerce recovery workflow</article>
+          <article class="glass card">Course selling workflow</article>
+          <article class="glass card">Agency workflow</article>
+          <article class="glass card">Local business workflow</article>
+        </div>
+      </section>
+
+      <section id="analytics" class="section two-cols">
+        <div class="glass card">
+          <h3>How It Works</h3>
+          <ol>
+            <li>Step 1: Connect tools</li>
+            <li>Step 2: Choose automation template</li>
+            <li>Step 3: Activate AI agent</li>
+          </ol>
+          <h4>Multi Language Support</h4>
+          <p>English · Bangla</p>
+        </div>
+        <div class="glass card">
+          <h3>Login System</h3>
+          <div class="login-buttons">
+            <button class="btn btn-primary">Continue with Google</button>
+            <button class="btn btn-ghost">Continue with Email</button>
+          </div>
+          <h4>Security Badges</h4>
+          <ul>
+            <li>🔒 Data encrypted</li>
+            <li>🛡️ Secure integrations</li>
+            <li>👁️ Privacy protected</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h3>Pricing</h3>
+        <div class="grid three">
+          <article class="glass card"><h4>Starter</h4><p>$29/mo</p></article>
+          <article class="glass card popular"><h4>Growth</h4><p>$99/mo</p></article>
+          <article class="glass card"><h4>Scale</h4><p>$249/mo</p></article>
+        </div>
+      </section>
+
+      <section class="section" id="support">
+        <h3>Testimonials</h3>
+        <div class="grid three">
+          <article class="glass card">“Our lead response time dropped by 80%.”</article>
+          <article class="glass card">“Campaign optimization is now completely hands-free.”</article>
+          <article class="glass card">“Customer support became 24/7 without new hires.”</article>
+        </div>
+      </section>
+
+      <section class="section creator" id="about-creator">
+        <h3>About Creator</h3>
+        <div class="glass card">
+          <p><strong>Creator Name:</strong> AL AMIN JISAN</p>
+          <p><strong>Title:</strong> Founder & CEO of Cartory BD</p>
+          <p><strong>Country:</strong> Proudly Built in Bangladesh 🇧🇩</p>
+          <p><strong>WhatsApp:</strong> 01843253599 (Messaging Only)</p>
+          <p><strong>Email:</strong> cartorymain@gmail.com</p>
+          <p class="muted">This automation system is designed to help businesses worldwide automate operations using AI.</p>
+        </div>
+      </section>
+
+      <footer id="settings" class="footer glass">
+        <p>© 2026 AI Business Automation Agent · Built with ❤️ in Bangladesh</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
