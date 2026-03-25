@@ -24,6 +24,7 @@
       </div>
       <nav>
         <a href="#dashboard" class="active">Dashboard</a>
+        <a href="#trend-scanner">Trend Scanner</a>
         <a href="#automations">Automations</a>
         <a href="#integrations">Integrations</a>
         <a href="#templates">Templates</a>
@@ -61,14 +62,78 @@
           </div>
           <p class="built-text">Built with ❤️ in Bangladesh · Proudly Built in Bangladesh 🇧🇩</p>
         </div>
-        <div class="hero-card glass">
-          <h3>Smart Notification System</h3>
-          <ul>
-            <li>✅ New lead arrived from Facebook Ads.</li>
-            <li>📉 Ads performance dropped 12% this hour.</li>
-            <li>💬 Customer complaint detected in support queue.</li>
-            <li>📈 Sales increased by 17% since morning.</li>
-          </ul>
+        <div class="hero-card glass trend-highlight-card">
+          <h3>Live Trend Highlight</h3>
+          <p id="dynamic-highlight" class="dynamic-highlight">Loading top niche...</p>
+          <p class="muted" id="highlight-meta">This updates based on the selected country and trend velocity.</p>
+          <div class="meter-track" aria-hidden="true">
+            <span id="highlight-meter" class="meter-fill"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="trend-scanner" class="section">
+        <h3>Global Trend Scanner</h3>
+        <div class="glass trend-scanner">
+          <div class="trend-toolbar">
+            <div class="country-selector-wrap">
+              <label for="country-search">Country Selector</label>
+              <input id="country-search" type="search" placeholder="Search country (e.g., Bangladesh, USA, Germany)" autocomplete="off" />
+              <select id="country-selector" size="8" aria-label="Select country"></select>
+            </div>
+            <div class="api-keys card glass">
+              <h4>Real-Time API Setup</h4>
+              <p class="muted">Add keys locally to enable live 6-hour refresh.</p>
+              <input id="youtube-api-key" type="password" placeholder="YouTube Data API v3 key" />
+              <input id="rapidapi-key" type="password" placeholder="RapidAPI key (optional)" />
+              <input id="rapidapi-host" type="text" placeholder="RapidAPI host (optional)" />
+              <button id="refresh-trends" class="btn btn-primary">Fetch Real-Time Trends</button>
+            </div>
+          </div>
+
+          <div id="trend-loading" class="skeleton-grid" hidden>
+            <div class="skeleton card"></div>
+            <div class="skeleton card"></div>
+            <div class="skeleton card"></div>
+            <div class="skeleton card"></div>
+          </div>
+
+          <div class="stats-grid trend-results" id="trend-results">
+            <article class="glass">
+              <h4>Live Trending Topic</h4>
+              <p id="topic-output">—</p>
+            </article>
+            <article class="glass">
+              <h4>Keyword Strength</h4>
+              <p id="keyword-strength">—</p>
+            </article>
+            <article class="glass">
+              <h4>🔥 Viral Opportunity Score</h4>
+              <p id="viral-score">—</p>
+              <div class="meter-track"><span id="viral-meter" class="meter-fill"></span></div>
+            </article>
+            <article class="glass">
+              <h4>Best Upload Timing</h4>
+              <p id="upload-window">—</p>
+            </article>
+          </div>
+
+          <div class="grid three trend-deep">
+            <article class="glass card">
+              <h4>Live Category Trend</h4>
+              <p id="category-trend">—</p>
+            </article>
+            <article class="glass card">
+              <h4>Live Keyword Spike</h4>
+              <p id="keyword-spike">—</p>
+            </article>
+            <article class="glass card">
+              <h4>Thumbnail Intelligence</h4>
+              <ul id="thumbnail-insights" class="insight-list">
+                <li>—</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -130,8 +195,8 @@
             <li>Step 2: Choose automation template</li>
             <li>Step 3: Activate AI agent</li>
           </ol>
-          <h4>Multi Language Support</h4>
-          <p>English · Bangla</p>
+          <h4>Global Coverage</h4>
+          <p>Country-aware trend intelligence with searchable selector.</p>
         </div>
         <div class="glass card">
           <h3>Login System</h3>
