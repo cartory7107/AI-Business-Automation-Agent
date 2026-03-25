@@ -72,6 +72,40 @@
         </div>
       </section>
 
+
+      <section id="trend-scanner" class="section">
+        <h3>Trend Scanner (Global Intelligence)</h3>
+        <div class="trend-layout">
+          <article class="glass card trend-controls">
+            <h4>🌍 Country Selector</h4>
+            <p class="muted">Search and select any country to localize trends, keywords, viral score, and upload timing.</p>
+            <label for="country-input">Country</label>
+            <input id="country-input" list="country-list" placeholder="Search country (e.g., Bangladesh, USA, Japan)" autocomplete="off" />
+            <datalist id="country-list"></datalist>
+            <div class="live-meta">
+              <p>Last Update: <span id="last-update">--</span></p>
+              <p>Auto Refresh: Every 6 hours</p>
+            </div>
+            <button id="refresh-trends" class="btn btn-primary">Refresh Trends</button>
+          </article>
+
+          <article class="glass card trend-results">
+            <h4 id="highlight-niche">📈 Top Niche: --</h4>
+            <p id="live-topic">Live trending topic: --</p>
+            <p id="live-keyword">Live keyword spike: --</p>
+            <p id="upload-suggestion">Best upload timing: --</p>
+            <div class="meter-wrap">
+              <div class="meter-label">
+                <span>🔥 Viral Opportunity Score</span>
+                <strong id="viral-score">--%</strong>
+              </div>
+              <div class="meter"><span id="viral-bar"></span></div>
+            </div>
+            <ul id="signal-breakdown" class="signal-list"></ul>
+          </article>
+        </div>
+      </section>
+
       <section class="stats-grid">
         <article class="glass"><h4>Leads Today</h4><p>186</p></article>
         <article class="glass"><h4>Sales Today</h4><p>$8,420</p></article>
